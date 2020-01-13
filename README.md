@@ -32,6 +32,15 @@ For searching hyperparameters such as learning rate, weight decay and hidden siz
 
 ### Data Preprocesing
 
-After attempt to da data cleaning such as lowercasing, noise removal, lemmatization and stop-words removal wos found that it made worse result. So it can mean that dataset is good anought, and we can skip this step to save more information.
+After attempt to do data cleaning such as lowercasing, noise removal, lemmatization and stop-words removal wos found that it made worse result. So it can mean that dataset is good anought, and we can skip this step to save more information.
+
+### References
+
+* Text Classification Improved by Integrating Bidirectional LSTM
+with Two-dimensional Max Pooling [paper](https://www.aclweb.org/anthology/C16-1329.pdf)
+* BERT Classifier: Just Another Pytorch Model [article](https://towardsdatascience.com/bert-classifier-just-another-pytorch-model-881b3cf05784)
+* Algorithms for Hyper-Parameter Optimization [paper](https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf)
+* Tune Search Algorithms [docs](https://ray.readthedocs.io/en/latest/tune-searchalg.html)
+* Text-Classification-Pytorch [repository](https://github.com/prakashpandey9/Text-Classification-Pytorch#license)
 
 
