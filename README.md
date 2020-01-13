@@ -18,16 +18,12 @@ Dataset was taken from [Kaggle](https://www.kaggle.com/rmisra/news-headlines-dat
 
 Obviusly pre-trained model got better performance, therefore BERT showed the highest accuracy. LSTM with 2D MaxPooling leyer, Bidirectional LSTM, LSTM with Attantion showed approximately the same result, while usual LSTM was litle bit worse.
 
-|                                |  Loss  | Validation Accuracy |
-| ------------------------------ | ------ | ------------------- |
+|  |  Loss  | Validation Accuracy |
+| --- | --- | --- |
 | Usual LSTM                     | 0.5056 |        0.8557       |
-| ------------------------------ | ------ | ------------------- |
 | Bidirectional LSTM             | 0.4967 |        0.8669       |
-| ------------------------------ | ------ | ------------------- |
 | LSTM with Attantion            | 0.4983 |        0.8650       |
-| ------------------------------ | ------ | ------------------- |
 | LSTM with 2D MaxPooling leyer  | 0.4977 |        0.8627       |
-| ------------------------------ | ------ | ------------------- |
 | BERT                           | 0.3999 |        0.9092       |
 
 Model's weights you can find [here]()
