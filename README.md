@@ -26,21 +26,21 @@ Obviusly pre-trained model got better performance, therefore BERT showed the hig
 | LSTM with 2D MaxPooling leyer  | 0.4977 |        0.8627       |
 | BERT                           | 0.3999 |        0.9092       |
 
-Model's weights you can find [here]()
+Model's weights you can find [here](https://github.com/sqrt420/DetectingSarcasm/tree/master/ModelWeights)
 
 For searching hyperparameters such as learning rate, weight decay and hidden size of LSTMs was used HyperOpt Algorithm from Tune library. You can find more detail in [this](https://github.com/sqrt420/DetectingSarcasm/blob/master/TuneLSTMs.ipynb) notebook.
 
 ### Data Preprocesing
 
-After attempt to do data cleaning such as lowercasing, noise removal, lemmatization and stop-words removal wos found that it made worse result. So it can mean that dataset is good anought, and we can skip this step to save more information.
+After [attempt](https://github.com/sqrt420/DetectingSarcasm/blob/master/CleanedDataLSTMs.ipynb) to do data cleaning such as lowercasing, noise removal, lemmatization and stop-words removal wos found that it made worse result. So it can mean that dataset is good anought, and we can skip this step to save more information.
 
 ### References
 
 * Text Classification Improved by Integrating Bidirectional LSTM
-with Two-dimensional Max Pooling [paper](https://www.aclweb.org/anthology/C16-1329.pdf)
-* BERT Classifier: Just Another Pytorch Model [article](https://towardsdatascience.com/bert-classifier-just-another-pytorch-model-881b3cf05784)
-* Algorithms for Hyper-Parameter Optimization [paper](https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf)
-* Tune Search Algorithms [docs](https://ray.readthedocs.io/en/latest/tune-searchalg.html)
-* Text-Classification-Pytorch [repository](https://github.com/prakashpandey9/Text-Classification-Pytorch#license)
+with Two-dimensional Max Pooling [[paper](https://www.aclweb.org/anthology/C16-1329.pdf)]
+* BERT Classifier: Just Another Pytorch Model [[article](https://towardsdatascience.com/bert-classifier-just-another-pytorch-model-881b3cf05784)]
+* Algorithms for Hyper-Parameter Optimization [[paper](https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf)]
+* Tune Search Algorithms [[docs](https://ray.readthedocs.io/en/latest/tune-searchalg.html)]
+* Text-Classification-Pytorch [[repository](https://github.com/prakashpandey9/Text-Classification-Pytorch#license)]
 
 
