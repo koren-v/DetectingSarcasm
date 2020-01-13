@@ -4,7 +4,7 @@
 
 Can you identify sarcastic sentences? Can you distinguish between fake news and legitimate news?
 In this repository you can find implementation of several RNNs for detecting sarcasm in news headline and also using of pre-trained BERT for this task.
-Dataset was taken from [Kaggle](https://www.kaggle.com/rmisra/news-headlines-dataset-for-sarcasm-detection) 
+Dataset was taken from [Kaggle](https://www.kaggle.com/rmisra/news-headlines-dataset-for-sarcasm-detection).
 
 ### Models
 
