@@ -10,7 +10,7 @@ Dataset was taken from [Kaggle](https://www.kaggle.com/rmisra/news-headlines-dat
 
 ├──Data             <- dataset
 ├──Models           
-|  └── Weights      <- weights of trained models
+│  └── Weights      <- weights of trained models
 └──Notebooks        <- example of training lstm and transformer
    └──Experements   <- finding hyperparameters and experement of data cleaning
 ### Models
