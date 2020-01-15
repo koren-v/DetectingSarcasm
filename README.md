@@ -8,31 +8,31 @@ Dataset was taken from [Kaggle](https://www.kaggle.com/rmisra/news-headlines-dat
 
 ### Models
 
-* [Usual LSTM](https://github.com/sqrt420/DetectingSarcasm/blob/master/LSTM.py)
-* [Bidirectional LSTM](https://github.com/sqrt420/DetectingSarcasm/blob/master/BidirectionalLSTM.py)
-* [LSTM with Attantion](https://github.com/sqrt420/DetectingSarcasm/blob/master/AttantionLSTM.py)
-* [LSTM with 2D MaxPooling leyer](https://github.com/sqrt420/DetectingSarcasm/blob/master/LSTM2DMaxPool.py)
-* [BERT](https://github.com/sqrt420/DetectingSarcasm/blob/master/BERT.ipynb)
+* [Usual LSTM](https://github.com/koren-v/DetectingSarcasm/blob/master/Models/LSTM.py)
+* [Bidirectional LSTM](https://github.com/koren-v/DetectingSarcasm/blob/master/Models/BidirectionalLSTM.py)
+* [LSTM with Attantion](https://github.com/koren-v/DetectingSarcasm/blob/master/Models/AttantionLSTM.py)
+* [LSTM with 2D MaxPooling leyer](https://github.com/koren-v/DetectingSarcasm/blob/master/Models/LSTM2DMaxPool.py)
+* [BERT](https://github.com/koren-v/DetectingSarcasm/blob/master/Notebooks/BERT.ipynb)
 
 ### Comparison
 
 Obviusly pre-trained model got better performance, therefore BERT showed the highest accuracy. LSTM with 2D MaxPooling leyer, Bidirectional LSTM, LSTM with Attantion showed approximately the same result, while usual LSTM was litle bit worse.
 
-|  |  Loss  | Validation Accuracy |
+|  |  Loss  | Validation Accuracy | Recall | Precision | F1 |
 | --- | --- | --- |
-| Usual LSTM                     | 0.6616 |        0.8660       |
-| Bidirectional LSTM             | 0.6558 |        0.8697       |
-| LSTM with Attantion            | 0.6555 |        0.8698       |
-| LSTM with 2D MaxPooling leyer  | 0.6515 |        0.8719       |
-| BERT                           | 0.3999 |        0.9092       |
+| Usual LSTM                     | 0.6616 |        0.8660       | 0.8190 | 0.8890 | 0.8526 |
+| Bidirectional LSTM             | 0.6558 |        0.8697       | 0.8944 | 0.8432 | 0.8681 |
+| LSTM with Attantion            | 0.6555 |        0.8698       | 0.9143 | 0.8188 | 0.8639 |
+| LSTM with 2D MaxPooling leyer  | 0.6515 |        0.8719       | 0.8712 | 0.8649 | 0.8680 |
+| BERT                           | 0.3999 |        0.9092       | 0.8739 | 0.9113 | 0.8922 |
 
 Model's weights you can find [here]()
 
-For searching hyperparameters such as learning rate, weight decay and hidden size of LSTMs was used HyperOpt Algorithm from Tune library. You can find more detail in [this](https://github.com/sqrt420/DetectingSarcasm/blob/master/TuneLSTMs.ipynb) notebook.
+For searching hyperparameters such as learning rate, weight decay and hidden size of LSTMs was used HyperOpt Algorithm from Tune library. You can find more detail in [this](https://github.com/koren-v/DetectingSarcasm/blob/master/Notebooks/Experements/TuneLSTMs.ipynb) notebook.
 
 ### Data Preprocesing
 
-After attempt to do data cleaning such as lowercasing, noise removal, lemmatization and stop-words removal wos found that it made worse result. So it can mean that dataset is good anought, and we can skip this step to save more information.
+After attempt to do data cleaning such as lowercasing, noise removal, lemmatization and stop-words removal wos found that it made worse result. So it can mean that dataset is good anought, and we can skip this step to save more information. This experiment you can find [here](https://github.com/koren-v/DetectingSarcasm/blob/master/Notebooks/Experements/CleanedDataLSTMs.ipynb)
 
 ### References
 
