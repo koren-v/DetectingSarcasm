@@ -23,7 +23,7 @@ class LSTMClassifier(nn.Module):
 		self.num_layers = num_layers
 		
 		self.word_embeddings = nn.Embedding(vocab_size, embedding_length)# Initializing the look-up table.
-		#self.word_embeddings.weight = nn.Parameter(weights, requires_grad=False) # Assigning the look-up table to the pre-trained GloVe word embedding.
+		self.word_embeddings.weight = nn.Parameter(weights, requires_grad=False) # Assigning the look-up table to the pre-trained GloVe word embedding.
 		self.lstm = nn.LSTM(embedding_length, hidden_size, num_layers, batch_first = True, bidirectional=True)
 		self.label = nn.Linear(hidden_size*2, output_size) #*2 for bidirect
 		
