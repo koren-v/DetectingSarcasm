@@ -30,6 +30,8 @@ Model's weights you can find [here](https://github.com/koren-v/DetectingSarcasm/
 
 For searching hyperparameters such as learning rate, weight decay and hidden size of LSTMs was used HyperOpt Algorithm from Tune library. You can find more detail in [this](https://github.com/koren-v/DetectingSarcasm/blob/master/Notebooks/Experements/TuneLSTMs.ipynb) notebook.
 
+Sometimes, it's important to see examples, where your model make mistakes. It was implemented in [ModelMistakes notebook](https://github.com/koren-v/DetectingSarcasm/blob/master/Notebooks/Experements/ModelMistakes.ipynb) and you can find some examples there. 
+
 ### Data Preprocesing
 
 After attempt to do data cleaning such as lowercasing, noise removal, lemmatization and stop-words removal wos found that it made worse result. So it can mean that dataset is good anought, and we can skip this step to save more information. This experiment you can find [here](https://github.com/koren-v/DetectingSarcasm/blob/master/Notebooks/Experements/CleanedDataLSTMs.ipynb)
