@@ -3,7 +3,7 @@
 ### Description
 
 Can you identify sarcastic sentences? Can you distinguish between fake news and legitimate news?
-In this repository you can find implementation of several RNNs for detecting sarcasm in news headline and also using of pre-trained BERT for this task.
+In this repository, you can find an implementation of several RNNs for detecting sarcasm in news headlines and also using pre-trained BERT for this task. There is one important notice before looking at comparison table that RNNs are not pre-trained they just use pre-trained GloVe vectors. 
 Dataset was taken from [Kaggle](https://www.kaggle.com/rmisra/news-headlines-dataset-for-sarcasm-detection) 
 
 ### Models
@@ -11,12 +11,12 @@ Dataset was taken from [Kaggle](https://www.kaggle.com/rmisra/news-headlines-dat
 * [Usual LSTM](https://github.com/koren-v/DetectingSarcasm/blob/master/Models/LSTM.py)
 * [Bidirectional LSTM](https://github.com/koren-v/DetectingSarcasm/blob/master/Models/BidirectionalLSTM.py)
 * [LSTM with Attantion](https://github.com/koren-v/DetectingSarcasm/blob/master/Models/AttantionLSTM.py)
-* [LSTM with 2D MaxPooling leyer](https://github.com/koren-v/DetectingSarcasm/blob/master/Models/LSTM2DMaxPool.py)
+* [LSTM with 2D MaxPooling layer](https://github.com/koren-v/DetectingSarcasm/blob/master/Models/LSTM2DMaxPool.py)
 * [BERT](https://github.com/koren-v/DetectingSarcasm/blob/master/Notebooks/BERT.ipynb)
 
 ### Comparison
 
-Obviusly pre-trained model got better performance, therefore BERT showed the highest accuracy. LSTM with 2D MaxPooling leyer, Bidirectional LSTM, LSTM with Attantion showed approximately the same result, while usual LSTM was litle bit worse.
+Obviously the pre-trained model got better performance, therefore BERT showed the highest accuracy. LSTM with 2D MaxPooling layer, Bidirectional LSTM, LSTM with Attention showed approximately the same result, while usual LSTM was little bit worse.
 
 |  |  Loss  | Validation Accuracy | Recall | Precision | F1 |
 | --- | --- | --- | --- | --- | --- |
@@ -30,11 +30,11 @@ Model's weights you can find [here](https://github.com/koren-v/DetectingSarcasm/
 
 For searching hyperparameters such as learning rate, weight decay and hidden size of LSTMs was used HyperOpt Algorithm from Tune library. You can find more detail in [this](https://github.com/koren-v/DetectingSarcasm/blob/master/Notebooks/Experements/TuneLSTMs.ipynb) notebook.
 
-Sometimes, it's important to see examples, where your model make mistakes. It was implemented in [ModelMistakes notebook](https://github.com/koren-v/DetectingSarcasm/blob/master/Notebooks/Experements/ModelMistakes.ipynb) and you can find some examples there. 
+Sometimes, it's important to see examples, where your model makes mistakes. It was implemented in [ModelMistakes notebook](https://github.com/koren-v/DetectingSarcasm/blob/master/Notebooks/Experements/ModelMistakes.ipynb) and you can find some examples there. 
 
-### Data Preprocesing
+### Data Preprocessing
 
-After attempt to do data cleaning such as lowercasing, noise removal, lemmatization and stop-words removal wos found that it made worse result. So it can mean that dataset is good anought, and we can skip this step to save more information. This experiment you can find [here](https://github.com/koren-v/DetectingSarcasm/blob/master/Notebooks/Experements/CleanedDataLSTMs.ipynb)
+After an attempt to do data cleanings such as lowercasing, noise removal, lemmatization, and stop-words removal was found that it made worse result. So it can mean that the dataset is good enough, and we can skip this step to save more information. This experiment you can find [here](https://github.com/koren-v/DetectingSarcasm/blob/master/Notebooks/Experements/CleanedDataLSTMs.ipynb)
 
 ### References
 
